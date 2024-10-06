@@ -1,0 +1,23 @@
+.achievements-container {
+    padding: 2rem;
+  }
+  
+  /* .achievements-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+   */
+  .achievements-container h1 {
+    margin-top: 2rem;
+    color: #1f1f7a;
+  }
+  
+  .achievements-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .achievements-container li {
+    margin: 1rem 0;
+  }
+  

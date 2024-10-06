@@ -1,0 +1,62 @@
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .link-container {
+    background-color: #e6f7ff; /* Light blue background for each link container */
+    border-radius: 5px; /* Rounded corners for individual containers */
+    margin: 15px 50px; /* Increased space between containers and on both sides */
+    padding: 15px 30px; /* Increased padding inside the container */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: auto; /* Adjust width based on new margins */
+    max-width: 1100px; /* Optional max-width for larger screens */
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .logo {
+    width: 40px; /* Adjust logo size */
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px; /* Reduce the space between the logo and the text */
+  }
+  
+  .link-container:hover {
+    background-color: #cceeff; /* Darker blue on hover */
+  }
+  
+  .link-container a {
+    text-decoration: none; /* Remove underline */
+    color: #0073e6; /* Link color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-size: 18px; /* Set font size for better readability */
+    flex-grow: 1; /* Make the link text take available space */
+    display: flex;
+    align-items: center; /* Align text vertically with the logo */
+  }
+  
+  .link-container a:hover {
+    color: #0056b3; /* Darker color on hover */
+    font-weight: bold; /* Bold text on hover */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Subtle text shadow on hover */
+  }
+  
+  .link-container a:visited {
+    color: #1f1f7a; /* Color for visited links */
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .link-container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: flex-start; /* Align to the left */
+      padding: 20px; /* Increase padding for small screens */
+      margin: 15px 20px; /* Reduce the margin for smaller screens */
+    }
+  
+    .logo {
+      margin-bottom: 10px; /* Add space below the logo */
+    }
+  }
+  
